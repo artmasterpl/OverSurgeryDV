@@ -28,12 +28,12 @@ namespace OverSurgery
         {
 
             SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Artur\Documents\DataLogin.mdf;Integrated Security=True;Connect Timeout=30");
-            SqlDataAdapter sda = new SqlDataAdapter("Select Count(*) From [Table] where Username='" + textBox1.Text + "' and Password='" + textBox2.Text + "'",con);
+            SqlDataAdapter sda = new SqlDataAdapter("Select Count(*) From [Table] where Username='" + textBox1.Text + "' and Password='" + textBox2.Text + "'", con);
             DataTable dt = new DataTable();
 
             sda.Fill(dt);
 
-            if (dt.Rows[0][0].ToString() =="1")
+            if (dt.Rows[0][0].ToString() == "1")
             {
                 this.Hide();
 
@@ -44,7 +44,7 @@ namespace OverSurgery
             {
                 MessageBox.Show("Please Check your Username or Password");
             }
-      
+
         }
     }
 }

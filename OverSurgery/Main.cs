@@ -7,30 +7,34 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
+using System.Data.SqlClient;
 
 namespace OverSurgery
 {
     public partial class Main : Form
     {
+        string connesctionString;
+
+        SqlConnection connection;
+
         public Main()
         {
             InitializeComponent();
+           
+                connesctionString = ConfigurationManager.ConnectionStrings
+                     ["OverSurgery.Properties.Settings.DataConnectionString"].ConnectionString;
         }
 
         private void patientBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
-            this.Validate();
-            this.patientBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this._OverSurgery_2003mdbDataSet1);
+            
 
         }
 
         private void Main_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the '_OverSurgery_2003mdbDataSet1.Patient' table. You can move, or remove it, as needed.
-            this.patientTableAdapter.Fill(this._OverSurgery_2003mdbDataSet1.Patient);
-            // TODO: This line of code loads data into the '_OverSurgery_2003mdbDataSet.Patient' table. You can move, or remove it, as needed.
-            this.patientTableAdapter.Fill(this._OverSurgery_2003mdbDataSet1.Patient);
+            
 
         }
 
@@ -49,10 +53,7 @@ namespace OverSurgery
 
         private void patientBindingNavigatorSaveItem_Click_1(object sender, EventArgs e)
         {
-            this.Validate();
-            this.patientBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this._OverSurgery_2003mdbDataSet1);
-
+          
         }
 
         private void addNewPatientToolStripMenuItem_Click(object sender, EventArgs e)

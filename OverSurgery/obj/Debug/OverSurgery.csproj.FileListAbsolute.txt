@@ -10,3 +10,5 @@ C:\Users\Artur\Desktop\Programming  c#\Softwear Eng\Over Surgery\OverSurgery\Ove
 C:\Users\Artur\Desktop\Programming  c#\Softwear Eng\Over Surgery\OverSurgery\OverSurgery\bin\Debug\OverSurgery.2003mdb.mdb
 C:\Users\Artur\Desktop\Programming  c#\Softwear Eng\Over Surgery\OverSurgery\OverSurgery\obj\Debug\OverSurgery.AddPatient.resources
 C:\Users\Artur\Desktop\Programming  c#\Softwear Eng\Over Surgery\OverSurgery\OverSurgery\obj\Debug\OverSurgery.Login.resources
+C:\Users\Artur\Desktop\Programming  c#\Softwear Eng\Over Surgery\OverSurgery\OverSurgery\bin\Debug\Patient.mdf
+C:\Users\Artur\Desktop\Programming  c#\Softwear Eng\Over Surgery\OverSurgery\OverSurgery\bin\Debug\Patient_log.ldf
