@@ -128,9 +128,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="OverSurgery.2003mdb.mdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="Patient.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

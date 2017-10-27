@@ -12,35 +12,27 @@ namespace OverSurgery
 {
     public partial class AddPatient : Form
     {
+        
+
         public AddPatient()
         {
             InitializeComponent();
         }
 
-        private void AddPatient_Load(object sender, EventArgs e)
-        {
-          
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
+        private void Cancel_Click(object sender, EventArgs e)
         {
             this.Close();
+
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void textBox8_TextChanged(object sender, EventArgs e)
         {
-            patientBindingSource.AddNew();
+
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void ADD_Click(object sender, EventArgs e)
         {
-            patientBindingSource.EndEdit();
-            patientTableAdapter.Update();
+            
         }
     }
 }
