@@ -33,6 +33,8 @@
             this.Cancel = new System.Windows.Forms.Button();
             this.SAVE = new System.Windows.Forms.Button();
             this.PatientName = new System.Windows.Forms.TextBox();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.patientDataSet = new OverSurgery.PatientDataSet();
             this.PatientSurname = new System.Windows.Forms.TextBox();
             this.PatientDoB = new System.Windows.Forms.TextBox();
             this.PatientStreet = new System.Windows.Forms.TextBox();
@@ -44,19 +46,17 @@
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.patientDataSet = new OverSurgery.PatientDataSet();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.patientTableAdapter = new OverSurgery.PatientDataSetTableAdapters.PatientTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.surnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateOfBirthDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.streetDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.patientTableAdapter = new OverSurgery.PatientDataSetTableAdapters.PatientTableAdapter();
             this.Remove = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.patientDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.patientDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // ADD
@@ -96,6 +96,16 @@
             this.PatientName.Name = "PatientName";
             this.PatientName.Size = new System.Drawing.Size(100, 22);
             this.PatientName.TabIndex = 8;
+            // 
+            // bindingSource1
+            // 
+            this.bindingSource1.DataMember = "Patient";
+            this.bindingSource1.DataSource = this.patientDataSet;
+            // 
+            // patientDataSet
+            // 
+            this.patientDataSet.DataSetName = "PatientDataSet";
+            this.patientDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // PatientSurname
             // 
@@ -202,20 +212,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(643, 180);
             this.dataGridView1.TabIndex = 16;
             // 
-            // patientDataSet
-            // 
-            this.patientDataSet.DataSetName = "PatientDataSet";
-            this.patientDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // bindingSource1
-            // 
-            this.bindingSource1.DataMember = "Patient";
-            this.bindingSource1.DataSource = this.patientDataSet;
-            // 
-            // patientTableAdapter
-            // 
-            this.patientTableAdapter.ClearBeforeFill = true;
-            // 
             // idDataGridViewTextBoxColumn
             // 
             this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
@@ -253,6 +249,10 @@
             this.cityDataGridViewTextBoxColumn.HeaderText = "City";
             this.cityDataGridViewTextBoxColumn.Name = "cityDataGridViewTextBoxColumn";
             // 
+            // patientTableAdapter
+            // 
+            this.patientTableAdapter.ClearBeforeFill = true;
+            // 
             // Remove
             // 
             this.Remove.Location = new System.Drawing.Point(390, 126);
@@ -284,9 +284,9 @@
             this.Controls.Add(this.groupBox2);
             this.Name = "AddPatient";
             this.Load += new System.EventHandler(this.AddPatient_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.patientDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.patientDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

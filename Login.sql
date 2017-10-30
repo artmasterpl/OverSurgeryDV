@@ -1,5 +1,5 @@
-﻿CREATE TABLE [dbo].[Table]
-(
-	[Username] VARCHAR(50) NOT NULL PRIMARY KEY, 
-    [Password] VARCHAR(50) NULL
-)
+﻿CREATE TABLE [dbo].[Login] (
+    [Username] VARCHAR (50) NULL,
+    [Password] VARCHAR (50) NULL,
+    PRIMARY KEY CLUSTERED ([Username] ASC)
+);
