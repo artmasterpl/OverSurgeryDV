@@ -14,15 +14,17 @@ namespace OverSurgery
 {
     public partial class Main : Form
     {
-        string connesctionString;
+        private string connectionString;
 
-        SqlConnection connection;
+        SqlConnection connection =new SqlConnection ();
+
+       
 
         public Main()
         {
             InitializeComponent();
            
-                connesctionString = ConfigurationManager.ConnectionStrings
+                connectionString = ConfigurationManager.ConnectionStrings
                      ["OverSurgery.Properties.Settings.DataConnectionString"].ConnectionString;
         }
 

@@ -37,9 +37,22 @@ namespace OverSurgery.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        public string OverSurgery {
+        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\\OverSurgery.2003mdb." +
+            "mdb")]
+        public string OverSurgery_2003mdbConnectionString {
             get {
-                return ((string)(this["OverSurgery"]));
+                return ((string)(this["OverSurgery_2003mdbConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Patient.mdf;I" +
+            "ntegrated Security=True")]
+        public string PatientConnectionString {
+            get {
+                return ((string)(this["PatientConnectionString"]));
             }
         }
     }
