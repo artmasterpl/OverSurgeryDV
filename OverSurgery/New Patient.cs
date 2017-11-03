@@ -34,5 +34,18 @@ namespace OverSurgery
         {
             
         }
+
+        private void SAVE_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            Patient tomain = new Patient();
+            this.Hide();
+            tomain.ShowDialog();
+            Environment.Exit(1);
+        }
     }
 }

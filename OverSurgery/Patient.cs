@@ -12,13 +12,13 @@ using System.Data.SqlClient;
 
 namespace OverSurgery
 {
-    public partial class Main : Form
+    public partial class Patient : Form
     {
         string connesctionString;
 
         SqlConnection connection;
 
-        public Main()
+        public Patient()
         {
             InitializeComponent();
            
@@ -65,6 +65,14 @@ namespace OverSurgery
         private void patientDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
            
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            Main_Page tomain = new Main_Page();
+            this.Hide();
+            tomain.ShowDialog();
+            Environment.Exit(1);
         }
     }
 }

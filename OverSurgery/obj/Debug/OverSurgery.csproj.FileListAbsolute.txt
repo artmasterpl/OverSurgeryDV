@@ -11,3 +11,17 @@ C:\Users\Artur\Desktop\Programming  c#\Softwear Eng\Over Surgery\OverSurgery\Ove
 C:\Users\Artur\Desktop\Programming  c#\Softwear Eng\Over Surgery\OverSurgery\OverSurgery\obj\Debug\OverSurgery.Login.resources
 C:\Users\Artur\Desktop\Programming  c#\Softwear Eng\Over Surgery\OverSurgery\OverSurgery\bin\Debug\Patient.mdf
 C:\Users\Artur\Desktop\Programming  c#\Softwear Eng\Over Surgery\OverSurgery\OverSurgery\bin\Debug\Patient_log.ldf
+C:\Users\jiang\Documents\GitHub\OverSurgeryDV\OverSurgery\bin\Debug\Patient.mdf
+C:\Users\jiang\Documents\GitHub\OverSurgeryDV\OverSurgery\bin\Debug\Patient_log.ldf
+C:\Users\jiang\Documents\GitHub\OverSurgeryDV\OverSurgery\bin\Debug\OverSurgery.exe.config
+C:\Users\jiang\Documents\GitHub\OverSurgeryDV\OverSurgery\bin\Debug\OverSurgery.exe
+C:\Users\jiang\Documents\GitHub\OverSurgeryDV\OverSurgery\bin\Debug\OverSurgery.pdb
+C:\Users\jiang\Documents\GitHub\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.Login.resources
+C:\Users\jiang\Documents\GitHub\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.AddPatient.resources
+C:\Users\jiang\Documents\GitHub\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.Main_Page.resources
+C:\Users\jiang\Documents\GitHub\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.Patient.resources
+C:\Users\jiang\Documents\GitHub\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.Properties.Resources.resources
+C:\Users\jiang\Documents\GitHub\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.csproj.GenerateResource.Cache
+C:\Users\jiang\Documents\GitHub\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.csproj.CoreCompileInputs.cache
+C:\Users\jiang\Documents\GitHub\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.exe
+C:\Users\jiang\Documents\GitHub\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.pdb
