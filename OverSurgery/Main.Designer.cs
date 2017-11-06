@@ -43,7 +43,6 @@
             this.myProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.patientDataGridView = new System.Windows.Forms.DataGridView();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.patientDataGridView)).BeginInit();
             this.SuspendLayout();
@@ -114,6 +113,7 @@
             this.checkAvaliabilityToolStripMenuItem1.Name = "checkAvaliabilityToolStripMenuItem1";
             this.checkAvaliabilityToolStripMenuItem1.Size = new System.Drawing.Size(201, 26);
             this.checkAvaliabilityToolStripMenuItem1.Text = "Check Avaliability";
+            this.checkAvaliabilityToolStripMenuItem1.Click += new System.EventHandler(this.checkAvaliabilityToolStripMenuItem1_Click);
             // 
             // appointmentToolStripMenuItem
             // 
@@ -130,6 +130,7 @@
             this.makeAppointmentToolStripMenuItem.Name = "makeAppointmentToolStripMenuItem";
             this.makeAppointmentToolStripMenuItem.Size = new System.Drawing.Size(230, 26);
             this.makeAppointmentToolStripMenuItem.Text = "Make Appointment";
+            this.makeAppointmentToolStripMenuItem.Click += new System.EventHandler(this.makeAppointmentToolStripMenuItem_Click);
             // 
             // removeAppointmentToolStripMenuItem
             // 
@@ -168,22 +169,11 @@
             this.patientDataGridView.TabIndex = 2;
             this.patientDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.patientDataGridView_CellContentClick);
             // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.CalendarMonthBackground = System.Drawing.Color.White;
-            this.dateTimePicker1.Location = new System.Drawing.Point(562, 137);
-            this.dateTimePicker1.MaxDate = new System.DateTime(2018, 12, 31, 0, 0, 0, 0);
-            this.dateTimePicker1.MinDate = new System.DateTime(1910, 1, 1, 0, 0, 0, 0);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker1.TabIndex = 3;
-            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1012, 618);
-            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.patientDataGridView);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -214,6 +204,5 @@
         private System.Windows.Forms.ToolStripMenuItem myProfileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem;
         private System.Windows.Forms.DataGridView patientDataGridView;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

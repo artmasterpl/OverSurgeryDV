@@ -66,5 +66,16 @@ namespace OverSurgery
         {
            
         }
+
+        private void checkAvaliabilityToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void makeAppointmentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            x ss = new x();
+            ss.Show();
+        }
     }
 }

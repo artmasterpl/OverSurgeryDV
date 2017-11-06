@@ -11,3 +11,17 @@ C:\Users\Artur\Desktop\Programming  c#\Softwear Eng\Over Surgery\OverSurgery\Ove
 C:\Users\Artur\Desktop\Programming  c#\Softwear Eng\Over Surgery\OverSurgery\OverSurgery\obj\Debug\OverSurgery.Login.resources
 C:\Users\Artur\Desktop\Programming  c#\Softwear Eng\Over Surgery\OverSurgery\OverSurgery\bin\Debug\Patient.mdf
 C:\Users\Artur\Desktop\Programming  c#\Softwear Eng\Over Surgery\OverSurgery\OverSurgery\bin\Debug\Patient_log.ldf
+C:\Users\Artur\Desktop\Programming  c#\Softwear Eng\Over Surgery\OverSurgeryDV\OverSurgery\bin\Debug\OverSurgery.exe.config
+C:\Users\Artur\Desktop\Programming  c#\Softwear Eng\Over Surgery\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.exe
+C:\Users\Artur\Desktop\Programming  c#\Softwear Eng\Over Surgery\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.pdb
+C:\Users\Artur\Desktop\Programming  c#\Softwear Eng\Over Surgery\OverSurgeryDV\OverSurgery\bin\Debug\OverSurgery.exe
+C:\Users\Artur\Desktop\Programming  c#\Softwear Eng\Over Surgery\OverSurgeryDV\OverSurgery\bin\Debug\OverSurgery.pdb
+C:\Users\Artur\Desktop\Programming  c#\Softwear Eng\Over Surgery\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.csprojResolveAssemblyReference.cache
+C:\Users\Artur\Desktop\Programming  c#\Softwear Eng\Over Surgery\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.Login.resources
+C:\Users\Artur\Desktop\Programming  c#\Softwear Eng\Over Surgery\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.AddPatient.resources
+C:\Users\Artur\Desktop\Programming  c#\Softwear Eng\Over Surgery\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.Main.resources
+C:\Users\Artur\Desktop\Programming  c#\Softwear Eng\Over Surgery\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.Properties.Resources.resources
+C:\Users\Artur\Desktop\Programming  c#\Softwear Eng\Over Surgery\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.csproj.GenerateResource.Cache
+C:\Users\Artur\Desktop\Programming  c#\Softwear Eng\Over Surgery\OverSurgeryDV\OverSurgery\bin\Debug\DataBaseOS.mdf
+C:\Users\Artur\Desktop\Programming  c#\Softwear Eng\Over Surgery\OverSurgeryDV\OverSurgery\bin\Debug\DataBaseOS_log.ldf
+C:\Users\Artur\Desktop\Programming  c#\Softwear Eng\Over Surgery\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.x.resources

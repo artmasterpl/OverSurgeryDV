@@ -8,9 +8,10 @@ using System.Data.SqlClient;
 using System.Data;
 
 namespace OverSurgery
-{
+{ 
     class DBConnection
     {
+        
         
         //attributes
         private static DBConnection _instance;
@@ -52,9 +53,63 @@ namespace OverSurgery
 
         public void closeConnection()
         {
+            connectioToDB = new SqlConnection(connectionString);
             connectioToDB.Close();
         }
 
+        public String isLogin(String userName, String pwd)
+        {
+
+            //SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Artur\Documents\DataLogin.mdf;Integrated Security=True;Connect Timeout=30");
+
+            openConnection();
+            SqlDataAdapter sda = new SqlDataAdapter("Select Count (*) From [Login] where Username='" + userName + "' and Password='" + pwd + "'", connectioToDB);
+            DataTable dt = new DataTable();
+            DataSet DS = new DataSet();
+
+            DS.Tables.Add(dt);
+            sda.Fill(dt);
+            closeConnection();
+
+            return dt.Rows[0][0].ToString();
+
+        }
+
+       public void AddPatient(String Name, String surname, String DoB, String street, String city)
+        {
+
+            //open conecction
+            openConnection();
+            // initialize the sqldataadapter object, that retrives data from the table [Patient]
+            SqlDataAdapter sda = new SqlDataAdapter("Select * From [Patient]", connectionString);
+            
+            DataSet DS = new DataSet();           
+            sda.Fill(DS);
+            
+            // add row to the table
+            DataRow row = DS.Tables[0].NewRow();
+            row["Name"] = Name;
+            row["Surname"] = surname;
+            row["Date Of Birth"] = DoB;
+            row["Street"] = street;
+            row["City"] = city;
+
+            DS.Tables[0].Rows.Add(row);
+
+
+            //initialize sqlcommandbuilder to update, insert and delete properties 
+            SqlCommandBuilder cmdB = new SqlCommandBuilder(sda);
+            sda.UpdateCommand = cmdB.GetUpdateCommand();
+            sda.InsertCommand = cmdB.GetInsertCommand();
+            sda.DeleteCommand = cmdB.GetDeleteCommand();
+
+            sda.Update(DS);
+
+           
+        }
+
+
+        
 
         //create a data set for a certain request
         public DataSet getDataSet(String sqlStatement)
