@@ -77,5 +77,33 @@ namespace OverSurgery
             x ss = new x();
             ss.Show();
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            var result = MessageBox.Show("Are you sure that you want to close", "Exit",
+                              MessageBoxButtons.YesNo,
+                              MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
+
+        private void btnNewPat_Click(object sender, EventArgs e)
+        {
+            AddPatient tomain = new AddPatient();
+            this.Hide();
+            tomain.ShowDialog();
+            Environment.Exit(1);
+        }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            Login tologin = new Login();
+            this.Hide();
+            tologin.ShowDialog();
+            Environment.Exit(1);
+        }
     }
 }

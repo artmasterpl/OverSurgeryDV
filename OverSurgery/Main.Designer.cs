@@ -42,9 +42,10 @@
             this.checkAvaliabilityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.myProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.patientDataGridView = new System.Windows.Forms.DataGridView();
+            this.btnNewPat = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.btnLogOut = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.patientDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -159,22 +160,44 @@
             this.logOutToolStripMenuItem.Text = "Log Out";
             this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
             // 
-            // patientDataGridView
+            // btnNewPat
             // 
-            this.patientDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.patientDataGridView.Location = new System.Drawing.Point(12, 296);
-            this.patientDataGridView.Name = "patientDataGridView";
-            this.patientDataGridView.RowTemplate.Height = 24;
-            this.patientDataGridView.Size = new System.Drawing.Size(645, 257);
-            this.patientDataGridView.TabIndex = 2;
-            this.patientDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.patientDataGridView_CellContentClick);
+            this.btnNewPat.Location = new System.Drawing.Point(43, 87);
+            this.btnNewPat.Name = "btnNewPat";
+            this.btnNewPat.Size = new System.Drawing.Size(107, 62);
+            this.btnNewPat.TabIndex = 3;
+            this.btnNewPat.Text = "Add New Patient";
+            this.btnNewPat.UseVisualStyleBackColor = true;
+            this.btnNewPat.Click += new System.EventHandler(this.btnNewPat_Click);
+            // 
+            // btnExit
+            // 
+            this.btnExit.Location = new System.Drawing.Point(43, 217);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(107, 62);
+            this.btnExit.TabIndex = 4;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // btnLogOut
+            // 
+            this.btnLogOut.Location = new System.Drawing.Point(229, 217);
+            this.btnLogOut.Name = "btnLogOut";
+            this.btnLogOut.Size = new System.Drawing.Size(107, 62);
+            this.btnLogOut.TabIndex = 5;
+            this.btnLogOut.Text = "Log Out ";
+            this.btnLogOut.UseVisualStyleBackColor = true;
+            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1012, 618);
-            this.Controls.Add(this.patientDataGridView);
+            this.Controls.Add(this.btnLogOut);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.btnNewPat);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Main";
@@ -182,7 +205,6 @@
             this.Load += new System.EventHandler(this.Main_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.patientDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -203,6 +225,8 @@
         private System.Windows.Forms.ToolStripMenuItem checkThePrescriptionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem myProfileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem;
-        private System.Windows.Forms.DataGridView patientDataGridView;
+        private System.Windows.Forms.Button btnNewPat;
+        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnLogOut;
     }
 }
