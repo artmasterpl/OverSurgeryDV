@@ -12,13 +12,13 @@ using System.Data.SqlClient;
 
 namespace OverSurgery
 {
-    public partial class Main : Form
+    public partial class Patient : Form
     {
         string connesctionString;
 
         SqlConnection connection;
 
-        public Main()
+        public Patient()
         {
             InitializeComponent();
            
@@ -67,6 +67,7 @@ namespace OverSurgery
            
         }
 
+<<<<<<< HEAD:OverSurgery/Main.cs
         private void checkAvaliabilityToolStripMenuItem1_Click(object sender, EventArgs e)
         {
 
@@ -76,6 +77,14 @@ namespace OverSurgery
         {
             x ss = new x();
             ss.Show();
+=======
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            Main_Page tomain = new Main_Page();
+            this.Hide();
+            tomain.ShowDialog();
+            Environment.Exit(1);
+>>>>>>> b271fa3d69c65f2d5c0d0930f4607a313400e425:OverSurgery/Patient.cs
         }
     }
 }
