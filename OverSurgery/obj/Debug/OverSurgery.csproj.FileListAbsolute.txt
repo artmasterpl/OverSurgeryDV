@@ -25,3 +25,4 @@ C:\Users\jiang\Documents\GitHub\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.
 C:\Users\jiang\Documents\GitHub\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.csproj.CoreCompileInputs.cache
 C:\Users\jiang\Documents\GitHub\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.exe
 C:\Users\jiang\Documents\GitHub\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.pdb
+C:\Users\jiang\Documents\GitHub\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.csprojResolveAssemblyReference.cache
