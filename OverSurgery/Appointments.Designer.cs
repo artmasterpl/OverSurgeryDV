@@ -42,7 +42,7 @@
             // 
             // monthCalendar1
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(434, 265);
+            this.monthCalendar1.Location = new System.Drawing.Point(424, 49);
             this.monthCalendar1.MaxDate = new System.DateTime(2030, 12, 31, 0, 0, 0, 0);
             this.monthCalendar1.MinDate = new System.DateTime(2017, 11, 5, 0, 0, 0, 0);
             this.monthCalendar1.Name = "monthCalendar1";
