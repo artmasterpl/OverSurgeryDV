@@ -93,6 +93,7 @@
             this.extendPrescriptionToolStripMenuItem.Name = "extendPrescriptionToolStripMenuItem";
             this.extendPrescriptionToolStripMenuItem.Size = new System.Drawing.Size(240, 26);
             this.extendPrescriptionToolStripMenuItem.Text = "Extend  the Prescription";
+            this.extendPrescriptionToolStripMenuItem.Click += new System.EventHandler(this.extendPrescriptionToolStripMenuItem_Click);
             // 
             // checkThePrescriptionToolStripMenuItem
             // 
