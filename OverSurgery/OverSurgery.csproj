@@ -69,18 +69,10 @@
     <Compile Include="Appointments.Designer.cs">
       <DependentUpon>Appointments.cs</DependentUpon>
     </Compile>
-    <Compile Include="DataBaseOSDataSet.cs">
-      <DependentUpon>DataBaseOSDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="DataBaseOSDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataBaseOSDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DataBaseOSDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DataBaseOSDataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="DBConnection.cs" />
     <Compile Include="Login.cs">
@@ -101,12 +93,6 @@
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="Prescription.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Prescription.Designer.cs">
-      <DependentUpon>Prescription.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Appointments.resx">
@@ -120,9 +106,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Prescription.resx">
-      <DependentUpon>Prescription.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -144,17 +127,6 @@
     </None>
     <None Include="DataBaseOSDataSet.xss">
       <DependentUpon>DataBaseOSDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="DataBaseOSDataSet1.xsc">
-      <DependentUpon>DataBaseOSDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="DataBaseOSDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DataBaseOSDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DataBaseOSDataSet1.xss">
-      <DependentUpon>DataBaseOSDataSet1.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

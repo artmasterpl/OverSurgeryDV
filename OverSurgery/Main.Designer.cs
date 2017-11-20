@@ -32,6 +32,7 @@
             this.registerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addNewPatientToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.extendToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.extendPrescriptionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.checkThePrescriptionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.staffToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.checkAvaliabilityToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -81,17 +82,23 @@
             // extendToolStripMenuItem
             // 
             this.extendToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.extendPrescriptionToolStripMenuItem,
             this.checkThePrescriptionToolStripMenuItem});
             this.extendToolStripMenuItem.Name = "extendToolStripMenuItem";
             this.extendToolStripMenuItem.Size = new System.Drawing.Size(195, 26);
             this.extendToolStripMenuItem.Text = "Prescription";
             // 
+            // extendPrescriptionToolStripMenuItem
+            // 
+            this.extendPrescriptionToolStripMenuItem.Name = "extendPrescriptionToolStripMenuItem";
+            this.extendPrescriptionToolStripMenuItem.Size = new System.Drawing.Size(240, 26);
+            this.extendPrescriptionToolStripMenuItem.Text = "Extend  the Prescription";
+            // 
             // checkThePrescriptionToolStripMenuItem
             // 
             this.checkThePrescriptionToolStripMenuItem.Name = "checkThePrescriptionToolStripMenuItem";
-            this.checkThePrescriptionToolStripMenuItem.Size = new System.Drawing.Size(230, 26);
+            this.checkThePrescriptionToolStripMenuItem.Size = new System.Drawing.Size(240, 26);
             this.checkThePrescriptionToolStripMenuItem.Text = "Check the Prescription";
-            this.checkThePrescriptionToolStripMenuItem.Click += new System.EventHandler(this.checkThePrescriptionToolStripMenuItem_Click);
             // 
             // staffToolStripMenuItem
             // 
@@ -192,6 +199,7 @@
         private System.Windows.Forms.ToolStripMenuItem removeAppointmentToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem checkAvaliabilityToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem extendToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem extendPrescriptionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem checkThePrescriptionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem myProfileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem;
