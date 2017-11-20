@@ -8,15 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using System.Data;
 
 namespace OverSurgery
 {
     public partial class AddPatient : Form
     {
         private DBConnection con;
-
-
 
         public AddPatient()
         {

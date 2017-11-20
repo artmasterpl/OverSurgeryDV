@@ -16,8 +16,6 @@ namespace OverSurgery
     {
         string connesctionString;
 
-        SqlConnection connection;
-
         public Main()
         {
             InitializeComponent();
@@ -51,17 +49,6 @@ namespace OverSurgery
             ss.Show();
         }
 
-        private void patientBindingNavigatorSaveItem_Click_1(object sender, EventArgs e)
-        {
-          
-        }
-
-        private void addNewPatientToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            AddPatient ss = new AddPatient();
-            ss.Show();
-        }
-
         private void patientDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
            
@@ -78,9 +65,15 @@ namespace OverSurgery
             ss.Show();
         }
 
-        private void extendPrescriptionToolStripMenuItem_Click(object sender, EventArgs e)
+        private void checkThePrescriptionToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Prescription ss = new Prescription();
+            ss.Show();
+        }
+
+        private void addNewPatientToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddPatient ss = new AddPatient();
             ss.Show();
         }
     }

@@ -88,7 +88,7 @@
             // textBoxName
             // 
             this.textBoxName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource2, "Name", true));
-            this.textBoxName.Location = new System.Drawing.Point(194, 73);
+            this.textBoxName.Location = new System.Drawing.Point(206, 74);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(100, 22);
             this.textBoxName.TabIndex = 8;
@@ -100,7 +100,7 @@
             // textBoxSurname
             // 
             this.textBoxSurname.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource2, "Surname", true));
-            this.textBoxSurname.Location = new System.Drawing.Point(194, 113);
+            this.textBoxSurname.Location = new System.Drawing.Point(206, 114);
             this.textBoxSurname.Name = "textBoxSurname";
             this.textBoxSurname.Size = new System.Drawing.Size(100, 22);
             this.textBoxSurname.TabIndex = 5;
@@ -108,7 +108,7 @@
             // textBoxDoB
             // 
             this.textBoxDoB.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource2, "Date Of Birth", true));
-            this.textBoxDoB.Location = new System.Drawing.Point(194, 162);
+            this.textBoxDoB.Location = new System.Drawing.Point(206, 163);
             this.textBoxDoB.Name = "textBoxDoB";
             this.textBoxDoB.Size = new System.Drawing.Size(100, 22);
             this.textBoxDoB.TabIndex = 6;
@@ -117,7 +117,7 @@
             // textBoxStreetName
             // 
             this.textBoxStreetName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource2, "Street", true));
-            this.textBoxStreetName.Location = new System.Drawing.Point(194, 211);
+            this.textBoxStreetName.Location = new System.Drawing.Point(206, 212);
             this.textBoxStreetName.Name = "textBoxStreetName";
             this.textBoxStreetName.Size = new System.Drawing.Size(100, 22);
             this.textBoxStreetName.TabIndex = 7;
@@ -125,7 +125,7 @@
             // textBoxCity
             // 
             this.textBoxCity.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource2, "City", true));
-            this.textBoxCity.Location = new System.Drawing.Point(194, 262);
+            this.textBoxCity.Location = new System.Drawing.Point(206, 263);
             this.textBoxCity.Name = "textBoxCity";
             this.textBoxCity.Size = new System.Drawing.Size(100, 22);
             this.textBoxCity.TabIndex = 9;
@@ -133,7 +133,7 @@
             // LabelName
             // 
             this.LabelName.AutoSize = true;
-            this.LabelName.Location = new System.Drawing.Point(45, 78);
+            this.LabelName.Location = new System.Drawing.Point(57, 79);
             this.LabelName.Name = "LabelName";
             this.LabelName.Size = new System.Drawing.Size(45, 17);
             this.LabelName.TabIndex = 10;
@@ -142,7 +142,7 @@
             // LabelSurname
             // 
             this.LabelSurname.AutoSize = true;
-            this.LabelSurname.Location = new System.Drawing.Point(45, 116);
+            this.LabelSurname.Location = new System.Drawing.Point(57, 117);
             this.LabelSurname.Name = "LabelSurname";
             this.LabelSurname.Size = new System.Drawing.Size(65, 17);
             this.LabelSurname.TabIndex = 11;
@@ -151,7 +151,7 @@
             // LabelDoB
             // 
             this.LabelDoB.AutoSize = true;
-            this.LabelDoB.Location = new System.Drawing.Point(45, 167);
+            this.LabelDoB.Location = new System.Drawing.Point(57, 168);
             this.LabelDoB.Name = "LabelDoB";
             this.LabelDoB.Size = new System.Drawing.Size(90, 17);
             this.LabelDoB.TabIndex = 12;
@@ -160,7 +160,7 @@
             // LabelStreetName
             // 
             this.LabelStreetName.AutoSize = true;
-            this.LabelStreetName.Location = new System.Drawing.Point(45, 216);
+            this.LabelStreetName.Location = new System.Drawing.Point(57, 217);
             this.LabelStreetName.Name = "LabelStreetName";
             this.LabelStreetName.Size = new System.Drawing.Size(87, 17);
             this.LabelStreetName.TabIndex = 13;
@@ -169,7 +169,7 @@
             // labelCity
             // 
             this.labelCity.AutoSize = true;
-            this.labelCity.Location = new System.Drawing.Point(45, 265);
+            this.labelCity.Location = new System.Drawing.Point(57, 266);
             this.labelCity.Name = "labelCity";
             this.labelCity.Size = new System.Drawing.Size(31, 17);
             this.labelCity.TabIndex = 14;
@@ -177,7 +177,7 @@
             // 
             // groupBoxPatientDetails
             // 
-            this.groupBoxPatientDetails.Location = new System.Drawing.Point(27, 41);
+            this.groupBoxPatientDetails.Location = new System.Drawing.Point(48, 42);
             this.groupBoxPatientDetails.Name = "groupBoxPatientDetails";
             this.groupBoxPatientDetails.Size = new System.Drawing.Size(292, 275);
             this.groupBoxPatientDetails.TabIndex = 15;

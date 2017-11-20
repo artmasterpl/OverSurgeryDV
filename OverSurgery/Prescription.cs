@@ -28,5 +28,11 @@ namespace OverSurgery
         {
 
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            Main ss = new Main();
+            ss.Show();
+        }
     }
 }
