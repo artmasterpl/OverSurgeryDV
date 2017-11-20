@@ -52,6 +52,20 @@ namespace OverSurgery
         }
 
         private void patientBindingNavigatorSaveItem_Click_1(object sender, EventArgs e)
+<<<<<<< HEAD
+=======
+        {
+          
+        }
+
+        private void addNewPatientToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddPatient ss = new AddPatient();
+            ss.Show();
+        }
+
+        private void patientDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+>>>>>>> parent of 48f6777... 2
         {
           
         }
@@ -67,15 +81,22 @@ namespace OverSurgery
            
         }
 
+<<<<<<< HEAD
         private void checkAvaliabilityToolStripMenuItem1_Click(object sender, EventArgs e)
+=======
+        private void extendPrescriptionToolStripMenuItem_Click(object sender, EventArgs e)
+>>>>>>> parent of 48f6777... 2
         {
 
         }
+<<<<<<< HEAD
 
         private void makeAppointmentToolStripMenuItem_Click(object sender, EventArgs e)
         {
             x ss = new x();
             ss.Show();
         }
+=======
+>>>>>>> parent of 48f6777... 2
     }
 }
