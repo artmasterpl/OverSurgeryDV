@@ -8,15 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using System.Data;
 
 namespace OverSurgery
 {
     public partial class AddPatient : Form
     {
         private DBConnection con;
-
-
 
         public AddPatient()
         {
@@ -59,7 +56,6 @@ namespace OverSurgery
         // save data into database
         private void SAVE_Click(object sender, EventArgs e)
         {
-            string insquerry = "insert into Patient([Name], [Surname], [Date Od Birth], [Street], [City]) values (@Name, @surname, @DoB, @street, @city)";
 
             try
             {
@@ -68,17 +64,21 @@ namespace OverSurgery
                 con.openConnection();
                 DBConnection.getDBConnectionInstance().AddPatient(textBoxName.Text, textBoxSurname.Text, textBoxDoB.Text, textBoxStreetName.Text, textBoxCity.Text);
                 this.Validate();
+                con.insToTable(textBoxName.Text, textBoxSurname.Text, textBoxDoB.Text, textBoxStreetName.Text, textBoxCity.Text);
+
                 this.bindingSource2.EndEdit();
                 this.patientTableAdapter.Update(this.dataBaseOSDataSet.Patient);
 
-                SqlCommand insCmd = new SqlCommand(insquerry);
+                //string insquerry = "insert into Patient([Name], [Surname], [Date Od Birth], [Street], [City]) values (@Name, @surname, @DoB, @street, @city)";
+
+                //SqlCommand insCmd = new SqlCommand(insquerry);
                 
                 //// add data to table
                 //insCmd.Parameters.AddWithValue("@Name", textBoxName.Text);
-                //insCmd.Parameters.AddWithValue("@Name", textBoxSurname.Text);
-                //insCmd.Parameters.AddWithValue("@Name", textBoxDoB.Text);
-                //insCmd.Parameters.AddWithValue("@Name", textBoxStreetName.Text);
-                //insCmd.Parameters.AddWithValue("@Name", textBoxCity.Text);
+                //insCmd.Parameters.AddWithValue("@Surname", textBoxSurname.Text);
+                //insCmd.Parameters.AddWithValue("@Date Of Birth", textBoxDoB.Text);
+                //insCmd.Parameters.AddWithValue("@Street", textBoxStreetName.Text);
+                //insCmd.Parameters.AddWithValue("@City", textBoxCity.Text);
                 //int affectrows = insCmd.ExecuteNonQuery();
                 //MessageBox.Show(affectrows + "rows inserted");
 
@@ -101,6 +101,7 @@ namespace OverSurgery
         {
             con = new DBConnection();
             con.openConnection();
+            
                 
         }
     }

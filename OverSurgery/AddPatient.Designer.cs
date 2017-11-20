@@ -34,7 +34,6 @@
             this.SAVE = new System.Windows.Forms.Button();
             this.textBoxName = new System.Windows.Forms.TextBox();
             this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.dataBaseOSDataSet = new OverSurgery.DataBaseOSDataSet();
             this.textBoxSurname = new System.Windows.Forms.TextBox();
             this.textBoxDoB = new System.Windows.Forms.TextBox();
             this.textBoxStreetName = new System.Windows.Forms.TextBox();
@@ -46,19 +45,14 @@
             this.labelCity = new System.Windows.Forms.Label();
             this.groupBoxPatientDetails = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.surnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dateOfBirthDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.streetDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.patientTableAdapter = new OverSurgery.DataBaseOSDataSetTableAdapters.PatientTableAdapter();
             this.dataBaseOSDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.RemoveBTN = new System.Windows.Forms.Button();
+            this.dataBaseOSDataSet = new OverSurgery.DataBaseOSDataSet();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataBaseOSDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataBaseOSDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataBaseOSDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // ADD
@@ -94,7 +88,7 @@
             // textBoxName
             // 
             this.textBoxName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource2, "Name", true));
-            this.textBoxName.Location = new System.Drawing.Point(194, 73);
+            this.textBoxName.Location = new System.Drawing.Point(206, 74);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(100, 22);
             this.textBoxName.TabIndex = 8;
@@ -102,17 +96,11 @@
             // bindingSource2
             // 
             this.bindingSource2.DataMember = "Patient";
-            this.bindingSource2.DataSource = this.dataBaseOSDataSet;
-            // 
-            // dataBaseOSDataSet
-            // 
-            this.dataBaseOSDataSet.DataSetName = "DataBaseOSDataSet";
-            this.dataBaseOSDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // textBoxSurname
             // 
             this.textBoxSurname.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource2, "Surname", true));
-            this.textBoxSurname.Location = new System.Drawing.Point(194, 113);
+            this.textBoxSurname.Location = new System.Drawing.Point(206, 114);
             this.textBoxSurname.Name = "textBoxSurname";
             this.textBoxSurname.Size = new System.Drawing.Size(100, 22);
             this.textBoxSurname.TabIndex = 5;
@@ -120,7 +108,7 @@
             // textBoxDoB
             // 
             this.textBoxDoB.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource2, "Date Of Birth", true));
-            this.textBoxDoB.Location = new System.Drawing.Point(194, 162);
+            this.textBoxDoB.Location = new System.Drawing.Point(206, 163);
             this.textBoxDoB.Name = "textBoxDoB";
             this.textBoxDoB.Size = new System.Drawing.Size(100, 22);
             this.textBoxDoB.TabIndex = 6;
@@ -129,7 +117,7 @@
             // textBoxStreetName
             // 
             this.textBoxStreetName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource2, "Street", true));
-            this.textBoxStreetName.Location = new System.Drawing.Point(194, 211);
+            this.textBoxStreetName.Location = new System.Drawing.Point(206, 212);
             this.textBoxStreetName.Name = "textBoxStreetName";
             this.textBoxStreetName.Size = new System.Drawing.Size(100, 22);
             this.textBoxStreetName.TabIndex = 7;
@@ -137,7 +125,7 @@
             // textBoxCity
             // 
             this.textBoxCity.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource2, "City", true));
-            this.textBoxCity.Location = new System.Drawing.Point(194, 262);
+            this.textBoxCity.Location = new System.Drawing.Point(206, 263);
             this.textBoxCity.Name = "textBoxCity";
             this.textBoxCity.Size = new System.Drawing.Size(100, 22);
             this.textBoxCity.TabIndex = 9;
@@ -145,7 +133,7 @@
             // LabelName
             // 
             this.LabelName.AutoSize = true;
-            this.LabelName.Location = new System.Drawing.Point(45, 78);
+            this.LabelName.Location = new System.Drawing.Point(57, 79);
             this.LabelName.Name = "LabelName";
             this.LabelName.Size = new System.Drawing.Size(45, 17);
             this.LabelName.TabIndex = 10;
@@ -154,7 +142,7 @@
             // LabelSurname
             // 
             this.LabelSurname.AutoSize = true;
-            this.LabelSurname.Location = new System.Drawing.Point(45, 116);
+            this.LabelSurname.Location = new System.Drawing.Point(57, 117);
             this.LabelSurname.Name = "LabelSurname";
             this.LabelSurname.Size = new System.Drawing.Size(65, 17);
             this.LabelSurname.TabIndex = 11;
@@ -163,7 +151,7 @@
             // LabelDoB
             // 
             this.LabelDoB.AutoSize = true;
-            this.LabelDoB.Location = new System.Drawing.Point(45, 167);
+            this.LabelDoB.Location = new System.Drawing.Point(57, 168);
             this.LabelDoB.Name = "LabelDoB";
             this.LabelDoB.Size = new System.Drawing.Size(90, 17);
             this.LabelDoB.TabIndex = 12;
@@ -172,7 +160,7 @@
             // LabelStreetName
             // 
             this.LabelStreetName.AutoSize = true;
-            this.LabelStreetName.Location = new System.Drawing.Point(45, 216);
+            this.LabelStreetName.Location = new System.Drawing.Point(57, 217);
             this.LabelStreetName.Name = "LabelStreetName";
             this.LabelStreetName.Size = new System.Drawing.Size(87, 17);
             this.LabelStreetName.TabIndex = 13;
@@ -181,7 +169,7 @@
             // labelCity
             // 
             this.labelCity.AutoSize = true;
-            this.labelCity.Location = new System.Drawing.Point(45, 265);
+            this.labelCity.Location = new System.Drawing.Point(57, 266);
             this.labelCity.Name = "labelCity";
             this.labelCity.Size = new System.Drawing.Size(31, 17);
             this.labelCity.TabIndex = 14;
@@ -189,7 +177,7 @@
             // 
             // groupBoxPatientDetails
             // 
-            this.groupBoxPatientDetails.Location = new System.Drawing.Point(27, 41);
+            this.groupBoxPatientDetails.Location = new System.Drawing.Point(48, 42);
             this.groupBoxPatientDetails.Name = "groupBoxPatientDetails";
             this.groupBoxPatientDetails.Size = new System.Drawing.Size(292, 275);
             this.groupBoxPatientDetails.TabIndex = 15;
@@ -198,67 +186,16 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDataGridViewTextBoxColumn,
-            this.nameDataGridViewTextBoxColumn,
-            this.surnameDataGridViewTextBoxColumn,
-            this.dateOfBirthDataGridViewTextBoxColumn,
-            this.streetDataGridViewTextBoxColumn,
-            this.cityDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.bindingSource2;
             this.dataGridView1.Location = new System.Drawing.Point(48, 340);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(639, 150);
             this.dataGridView1.TabIndex = 16;
             // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            // 
-            // surnameDataGridViewTextBoxColumn
-            // 
-            this.surnameDataGridViewTextBoxColumn.DataPropertyName = "Surname";
-            this.surnameDataGridViewTextBoxColumn.HeaderText = "Surname";
-            this.surnameDataGridViewTextBoxColumn.Name = "surnameDataGridViewTextBoxColumn";
-            // 
-            // dateOfBirthDataGridViewTextBoxColumn
-            // 
-            this.dateOfBirthDataGridViewTextBoxColumn.DataPropertyName = "Date Of Birth";
-            this.dateOfBirthDataGridViewTextBoxColumn.HeaderText = "Date Of Birth";
-            this.dateOfBirthDataGridViewTextBoxColumn.Name = "dateOfBirthDataGridViewTextBoxColumn";
-            // 
-            // streetDataGridViewTextBoxColumn
-            // 
-            this.streetDataGridViewTextBoxColumn.DataPropertyName = "Street";
-            this.streetDataGridViewTextBoxColumn.HeaderText = "Street";
-            this.streetDataGridViewTextBoxColumn.Name = "streetDataGridViewTextBoxColumn";
-            // 
-            // cityDataGridViewTextBoxColumn
-            // 
-            this.cityDataGridViewTextBoxColumn.DataPropertyName = "City";
-            this.cityDataGridViewTextBoxColumn.HeaderText = "City";
-            this.cityDataGridViewTextBoxColumn.Name = "cityDataGridViewTextBoxColumn";
-            // 
             // patientTableAdapter
             // 
             this.patientTableAdapter.ClearBeforeFill = true;
-            // 
-            // dataBaseOSDataSetBindingSource
-            // 
-            this.dataBaseOSDataSetBindingSource.DataSource = this.dataBaseOSDataSet;
-            this.dataBaseOSDataSetBindingSource.Position = 0;
             // 
             // RemoveBTN
             // 
@@ -269,6 +206,11 @@
             this.RemoveBTN.Text = "Remove";
             this.RemoveBTN.UseVisualStyleBackColor = true;
             this.RemoveBTN.Click += new System.EventHandler(this.RemoveBTN_Click);
+            // 
+            // dataBaseOSDataSet
+            // 
+            this.dataBaseOSDataSet.DataSetName = "DataBaseOSDataSet";
+            this.dataBaseOSDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // AddPatient
             // 
@@ -292,34 +234,16 @@
             this.Name = "AddPatient";
             this.Load += new System.EventHandler(this.AddPatient_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataBaseOSDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataBaseOSDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataBaseOSDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
         
-        private System.Windows.Forms.BindingSource patientBindingSource;
-        
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.BindingSource patientBindingSource1;
         private System.Windows.Forms.Button ADD;
         private System.Windows.Forms.Button Cancel;
         private System.Windows.Forms.Button SAVE;
@@ -335,16 +259,10 @@
         private System.Windows.Forms.Label labelCity;
         private System.Windows.Forms.GroupBox groupBoxPatientDetails;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private DataBaseOSDataSet dataBaseOSDataSet;
         private DataBaseOSDataSetTableAdapters.PatientTableAdapter patientTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn surnameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dateOfBirthDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn streetDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cityDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource bindingSource2;
         private System.Windows.Forms.BindingSource dataBaseOSDataSetBindingSource;
         private System.Windows.Forms.Button RemoveBTN;
+        private DataBaseOSDataSet dataBaseOSDataSet;
     }
 }
