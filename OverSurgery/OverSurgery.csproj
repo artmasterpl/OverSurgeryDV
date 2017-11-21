@@ -109,6 +109,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Test Results.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test Results.Designer.cs">
+      <DependentUpon>Test Results.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Appointments.resx">
       <DependentUpon>Appointments.cs</DependentUpon>
     </EmbeddedResource>
@@ -133,6 +139,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Test Results.resx">
+      <DependentUpon>Test Results.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="ClassDiagram1.cd" />
     <None Include="DataBaseOSDataSet.xsc">
       <DependentUpon>DataBaseOSDataSet.xsd</DependentUpon>
