@@ -57,3 +57,4 @@ C:\Users\Lewis\Documents\GitHub\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.
 C:\Users\Lewis\Documents\GitHub\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.Properties.Resources.resources
 C:\Users\Lewis\Documents\GitHub\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.Test_Results.resources
 C:\Users\Lewis\Documents\GitHub\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.csproj.GenerateResource.Cache
+C:\Users\Lewis\Documents\GitHub\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.csproj.CoreCompileInputs.cache

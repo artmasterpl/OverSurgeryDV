@@ -51,6 +51,9 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 1;
+            this.comboBox1.DropDown += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.comboBox1.SelectionChangeCommitted += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // button1
             // 
@@ -92,6 +95,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Test_Results";
             this.Text = "Test_Results";
+            this.Load += new System.EventHandler(this.Test_Results_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
