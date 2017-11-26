@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using System.Data;
+
 
 namespace OverSurgery
 {
@@ -88,11 +88,11 @@ namespace OverSurgery
 
             }
 
-            
-            //catch (Exception ex)
-            //    {
-            //    MessageBox.Show(ex.Message);
-            //    }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
             finally
                  {
             con.closeConnection();
@@ -104,6 +104,7 @@ namespace OverSurgery
         {
             con = new DBConnection();
             con.openConnection();
+            
             
                 
         }

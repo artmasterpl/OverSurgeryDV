@@ -69,10 +69,21 @@
     <Compile Include="Appointments.Designer.cs">
       <DependentUpon>Appointments.cs</DependentUpon>
     </Compile>
+    <Compile Include="Constant.cs" />
     <Compile Include="DataBaseOSDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataBaseOSDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBaseOSDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataBaseOSDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBaseOSDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataBaseOSDataSet2.xsd</DependentUpon>
     </Compile>
     <Compile Include="DBConnection.cs" />
     <Compile Include="Login.cs">
@@ -128,6 +139,28 @@
     <None Include="DataBaseOSDataSet.xss">
       <DependentUpon>DataBaseOSDataSet.xsd</DependentUpon>
     </None>
+    <None Include="DataBaseOSDataSet1.xsc">
+      <DependentUpon>DataBaseOSDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataBaseOSDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataBaseOSDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataBaseOSDataSet1.xss">
+      <DependentUpon>DataBaseOSDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataBaseOSDataSet2.xsc">
+      <DependentUpon>DataBaseOSDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DataBaseOSDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataBaseOSDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataBaseOSDataSet2.xss">
+      <DependentUpon>DataBaseOSDataSet2.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -161,6 +194,17 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <DependentUpon>DataBaseOS.mdf</DependentUpon>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="TaskScheduler">
+      <Guid>{E34CB9F1-C7F7-424C-BE29-027DCC09363A}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

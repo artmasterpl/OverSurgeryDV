@@ -25,3 +25,5 @@ C:\Users\Artur\Desktop\Programming  c#\Softwear Eng\Over Surgery\OverSurgeryDV\O
 C:\Users\Artur\Desktop\Programming  c#\Softwear Eng\Over Surgery\OverSurgeryDV\OverSurgery\bin\Debug\DataBaseOS.mdf
 C:\Users\Artur\Desktop\Programming  c#\Softwear Eng\Over Surgery\OverSurgeryDV\OverSurgery\bin\Debug\DataBaseOS_log.ldf
 C:\Users\Artur\Desktop\Programming  c#\Softwear Eng\Over Surgery\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.x.resources
+C:\Users\Artur\Desktop\Programming  c#\Softwear Eng\Over Surgery\OverSurgeryDV\OverSurgery\obj\Debug\Interop.TaskScheduler.dll
+C:\Users\Artur\Desktop\Programming  c#\Softwear Eng\Over Surgery\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.csproj.ResolveComReference.cache
