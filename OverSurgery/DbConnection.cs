@@ -152,43 +152,5 @@ namespace OverSurgery
             closeConnection();
             //MessageBox.Show(affectrows + "rows inserted");
         }
-        //public static DataTable Load_Staff()
-        //{
-        //    SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM [Staff] ORDER BY [Name]", ConfigurationManager.ConnectionStrings["DataBaseOS"].ConnectionString);
-        //    DataTable dt = new DataTable();
-        //    da.Fill(dt);
-        //    return dt;
-        //}
-        //public static DataRow Staffs_Loader(int Id)
-        //{
-        //    SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM [Staff] WHERE [Id] = @Id", ConfigurationManager.ConnectionStrings["DataBaseOS"].ConnectionString);
-        //    da.SelectCommand.Parameters.AddWithValue("Id",Id);
-        //    DataTable dt = new DataTable();
-        //    da.Fill(dt);
-
-        //    if (dt.Rows.Count > 0)
-        //    {
-        //        return dt.Rows[0];
-        //    }
-        //    return null;
-        //}
-        public static DataRow LoadAppointment(int Id)
-        {
-            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM [Appointment] WHERE [Id] = @Id", ConfigurationManager.ConnectionStrings["DataBaseOS"].ConnectionString);
-            da.SelectCommand.Parameters.AddWithValue("Id", Id);
-
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-
-            if (dt.Rows.Count > 0)
-            {
-                return dt.Rows[0];
-            }
-            return null;
-
-        }
-        
-
-
     }
 }

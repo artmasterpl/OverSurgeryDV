@@ -18,8 +18,7 @@ namespace OverSurgery
             Application.SetCompatibleTextRenderingDefault(false);
 
             DBConnection.ConnectionStr = Properties.Settings.Default.DataConnectionString;
-            //Application.Run(new Login());
-            Application.Run(new Main());
+            Application.Run(new Login());
         }
     }
 }
