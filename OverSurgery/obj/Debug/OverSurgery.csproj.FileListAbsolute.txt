@@ -25,36 +25,3 @@ C:\Users\Artur\Desktop\Programming  c#\Softwear Eng\Over Surgery\OverSurgeryDV\O
 C:\Users\Artur\Desktop\Programming  c#\Softwear Eng\Over Surgery\OverSurgeryDV\OverSurgery\bin\Debug\DataBaseOS.mdf
 C:\Users\Artur\Desktop\Programming  c#\Softwear Eng\Over Surgery\OverSurgeryDV\OverSurgery\bin\Debug\DataBaseOS_log.ldf
 C:\Users\Artur\Desktop\Programming  c#\Softwear Eng\Over Surgery\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.x.resources
-C:\Users\jiang\Documents\GitHub\OverSurgeryDV\OverSurgery\bin\Debug\DataBaseOS.mdf
-C:\Users\jiang\Documents\GitHub\OverSurgeryDV\OverSurgery\bin\Debug\DataBaseOS_log.ldf
-C:\Users\jiang\Documents\GitHub\OverSurgeryDV\OverSurgery\bin\Debug\OverSurgery.exe.config
-C:\Users\jiang\Documents\GitHub\OverSurgeryDV\OverSurgery\bin\Debug\OverSurgery.exe
-C:\Users\jiang\Documents\GitHub\OverSurgeryDV\OverSurgery\bin\Debug\OverSurgery.pdb
-C:\Users\jiang\Documents\GitHub\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.x.resources
-C:\Users\jiang\Documents\GitHub\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.Login.resources
-C:\Users\jiang\Documents\GitHub\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.AddPatient.resources
-C:\Users\jiang\Documents\GitHub\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.Main.resources
-C:\Users\jiang\Documents\GitHub\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.Prescription.resources
-C:\Users\jiang\Documents\GitHub\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.Properties.Resources.resources
-C:\Users\jiang\Documents\GitHub\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.csproj.GenerateResource.Cache
-C:\Users\jiang\Documents\GitHub\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.csproj.CoreCompileInputs.cache
-C:\Users\jiang\Documents\GitHub\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.exe
-C:\Users\jiang\Documents\GitHub\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.pdb
-C:\Users\jiang\Documents\GitHub\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.csprojResolveAssemblyReference.cache
-C:\Users\Lewis\Documents\GitHub\OverSurgeryDV\OverSurgery\bin\Debug\OverSurgery.exe.config
-C:\Users\Lewis\Documents\GitHub\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.exe
-C:\Users\Lewis\Documents\GitHub\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.pdb
-C:\Users\Lewis\Documents\GitHub\OverSurgeryDV\OverSurgery\bin\Debug\DataBaseOS.mdf
-C:\Users\Lewis\Documents\GitHub\OverSurgeryDV\OverSurgery\bin\Debug\DataBaseOS_log.ldf
-C:\Users\Lewis\Documents\GitHub\OverSurgeryDV\OverSurgery\bin\Debug\OverSurgery.exe
-C:\Users\Lewis\Documents\GitHub\OverSurgeryDV\OverSurgery\bin\Debug\OverSurgery.pdb
-C:\Users\Lewis\Documents\GitHub\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.csprojResolveAssemblyReference.cache
-C:\Users\Lewis\Documents\GitHub\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.x.resources
-C:\Users\Lewis\Documents\GitHub\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.Login.resources
-C:\Users\Lewis\Documents\GitHub\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.AddPatient.resources
-C:\Users\Lewis\Documents\GitHub\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.Main.resources
-C:\Users\Lewis\Documents\GitHub\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.Prescription.resources
-C:\Users\Lewis\Documents\GitHub\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.Properties.Resources.resources
-C:\Users\Lewis\Documents\GitHub\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.Test_Results.resources
-C:\Users\Lewis\Documents\GitHub\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.csproj.GenerateResource.Cache
-C:\Users\Lewis\Documents\GitHub\OverSurgeryDV\OverSurgery\obj\Debug\OverSurgery.csproj.CoreCompileInputs.cache
