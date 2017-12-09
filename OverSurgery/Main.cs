@@ -77,5 +77,11 @@ namespace OverSurgery
             x ss = new x();
             ss.Show();
         }
+
+        private void testResultsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TestResults ss = new TestResults();
+            ss.Show();
+        }
     }
 }
