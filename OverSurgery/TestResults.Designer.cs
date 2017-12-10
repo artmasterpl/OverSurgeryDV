@@ -46,6 +46,11 @@
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.patientSelected = new System.Windows.Forms.TextBox();
+            this.patientNameTB = new System.Windows.Forms.TextBox();
+            this.patientSurnameTB = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataBaseOSDataSet1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataBaseOSDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.patientBindingSource)).BeginInit();
@@ -65,7 +70,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 31);
+            this.label1.Location = new System.Drawing.Point(2, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(85, 13);
             this.label1.TabIndex = 1;
@@ -73,7 +78,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(16, 91);
+            this.button1.Location = new System.Drawing.Point(57, 138);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(52, 42);
             this.button1.TabIndex = 2;
@@ -83,7 +88,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(83, 91);
+            this.button2.Location = new System.Drawing.Point(119, 138);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(52, 42);
             this.button2.TabIndex = 3;
@@ -93,9 +98,9 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(16, 160);
+            this.button3.Location = new System.Drawing.Point(57, 198);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(119, 36);
+            this.button3.Size = new System.Drawing.Size(114, 36);
             this.button3.TabIndex = 4;
             this.button3.Text = "Exit";
             this.button3.UseVisualStyleBackColor = true;
@@ -128,10 +133,10 @@
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6});
             this.patientDataGridView.DataSource = this.patientBindingSource;
-            this.patientDataGridView.Location = new System.Drawing.Point(156, 31);
+            this.patientDataGridView.Location = new System.Drawing.Point(185, 31);
             this.patientDataGridView.Name = "patientDataGridView";
             this.patientDataGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.patientDataGridView.Size = new System.Drawing.Size(344, 165);
+            this.patientDataGridView.Size = new System.Drawing.Size(344, 203);
             this.patientDataGridView.TabIndex = 4;
             this.patientDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.patientDataGridView_CellClick);
             // 
@@ -174,17 +179,65 @@
             // 
             // patientSelected
             // 
-            this.patientSelected.Location = new System.Drawing.Point(16, 56);
+            this.patientSelected.Location = new System.Drawing.Point(57, 56);
             this.patientSelected.Name = "patientSelected";
             this.patientSelected.ReadOnly = true;
-            this.patientSelected.Size = new System.Drawing.Size(119, 20);
+            this.patientSelected.Size = new System.Drawing.Size(114, 20);
             this.patientSelected.TabIndex = 5;
+            // 
+            // patientNameTB
+            // 
+            this.patientNameTB.Location = new System.Drawing.Point(57, 82);
+            this.patientNameTB.Name = "patientNameTB";
+            this.patientNameTB.ReadOnly = true;
+            this.patientNameTB.Size = new System.Drawing.Size(114, 20);
+            this.patientNameTB.TabIndex = 6;
+            // 
+            // patientSurnameTB
+            // 
+            this.patientSurnameTB.Location = new System.Drawing.Point(57, 108);
+            this.patientSurnameTB.Name = "patientSurnameTB";
+            this.patientSurnameTB.ReadOnly = true;
+            this.patientSurnameTB.Size = new System.Drawing.Size(114, 20);
+            this.patientSurnameTB.TabIndex = 7;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(2, 59);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(21, 13);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "ID:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(2, 85);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(38, 13);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Name:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(2, 111);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(49, 13);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Surname";
             // 
             // TestResults
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(525, 216);
+            this.ClientSize = new System.Drawing.Size(555, 260);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.patientSurnameTB);
+            this.Controls.Add(this.patientNameTB);
             this.Controls.Add(this.patientSelected);
             this.Controls.Add(this.patientDataGridView);
             this.Controls.Add(this.button3);
@@ -221,5 +274,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.TextBox patientSelected;
+        private System.Windows.Forms.TextBox patientNameTB;
+        private System.Windows.Forms.TextBox patientSurnameTB;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }

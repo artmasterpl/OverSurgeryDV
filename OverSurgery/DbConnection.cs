@@ -152,5 +152,26 @@ namespace OverSurgery
             closeConnection();
             //MessageBox.Show(affectrows + "rows inserted");
         }
+
+
+        public void testResults(String id)
+        {
+            string searchQuery = "SELECT [Name], [Surname] FROM [Patient] WHERE [Id]='" + id + "'";
+            openConnection();
+
+            SqlCommand testCmd = new SqlCommand(searchQuery, connectioToDB);
+
+            using (SqlDataReader dr = testCmd.ExecuteReader())
+            {
+                while(dr.Read())
+                {
+                    string resultQuery = dr[0].ToString();
+                }
+            }
+        }
+
+            
+        }
     }
-}
+
+

@@ -101,6 +101,12 @@
     <Compile Include="TestResults.Designer.cs">
       <DependentUpon>TestResults.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViewResults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewResults.Designer.cs">
+      <DependentUpon>ViewResults.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Appointments.resx">
       <DependentUpon>Appointments.cs</DependentUpon>
     </EmbeddedResource>
@@ -124,6 +130,9 @@
     </Compile>
     <EmbeddedResource Include="TestResults.resx">
       <DependentUpon>TestResults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewResults.resx">
+      <DependentUpon>ViewResults.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="ClassDiagram1.cd" />
     <None Include="DataBaseOSDataSet.xsc">
