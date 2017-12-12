@@ -48,5 +48,15 @@ namespace OverSurgery
         {
 
         }
+
+        private void CheckEnter(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
