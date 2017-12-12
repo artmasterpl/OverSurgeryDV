@@ -154,20 +154,19 @@ namespace OverSurgery
         }
 
 
-        public void testResults(String id)
+        public String testResults(String fName, String lName)
         {
-            string searchQuery = "SELECT [Name], [Surname] FROM [Patient] WHERE [Id]='" + id + "'";
+            string searchQuery = "SELECT * FROM [Table] WHERE [Name] ='" + fName + "' AND [Surname] ='" + lName + "";
             openConnection();
+            SqlDataAdapter sda = new SqlDataAdapter(searchQuery, connectioToDB);
+            DataTable dt = new DataTable();
+            DataSet ds = new DataSet();
 
-            SqlCommand testCmd = new SqlCommand(searchQuery, connectioToDB);
+            ds.Tables.Add(dt);
+            sda.Fill(dt);
+            string testy;
 
-            using (SqlDataReader dr = testCmd.ExecuteReader())
-            {
-                while(dr.Read())
-                {
-                    string resultQuery = dr[0].ToString();
-                }
-            }
+            return testy = dt.Rows[0][0].ToString();
         }
 
             

@@ -135,8 +135,9 @@
             this.patientDataGridView.DataSource = this.patientBindingSource;
             this.patientDataGridView.Location = new System.Drawing.Point(185, 31);
             this.patientDataGridView.Name = "patientDataGridView";
+            this.patientDataGridView.RowHeadersVisible = false;
             this.patientDataGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.patientDataGridView.Size = new System.Drawing.Size(344, 203);
+            this.patientDataGridView.Size = new System.Drawing.Size(304, 203);
             this.patientDataGridView.TabIndex = 4;
             this.patientDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.patientDataGridView_CellClick);
             // 
@@ -232,7 +233,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(555, 260);
+            this.ClientSize = new System.Drawing.Size(514, 260);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -260,7 +261,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
         private DataBaseOSDataSet dataBaseOSDataSet1;
         private DataBaseOSDataSetTableAdapters.PatientTableAdapter patientTableAdapter1;
         private System.Windows.Forms.BindingSource dataBaseOSDataSet1BindingSource;
@@ -274,10 +274,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.TextBox patientSelected;
-        private System.Windows.Forms.TextBox patientNameTB;
-        private System.Windows.Forms.TextBox patientSurnameTB;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        public System.Windows.Forms.TextBox patientNameTB;
+        public System.Windows.Forms.TextBox patientSurnameTB;
+        public System.Windows.Forms.Button button3;
     }
 }
