@@ -34,15 +34,18 @@
             this.tableTableAdapter = new OverSurgery.DataBaseOSDataSet1TableAdapters.TableTableAdapter();
             this.tableAdapterManager = new OverSurgery.DataBaseOSDataSet1TableAdapters.TableAdapterManager();
             this.patientNameLabel = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Surname = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TestType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TestDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TestResult = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pName = new System.Windows.Forms.Label();
+            this.pSName = new System.Windows.Forms.Label();
+            this.testType = new System.Windows.Forms.Label();
+            this.testDate = new System.Windows.Forms.Label();
+            this.testResults = new System.Windows.Forms.Label();
+            this.pNameTB = new System.Windows.Forms.TextBox();
+            this.pSNameTB = new System.Windows.Forms.TextBox();
+            this.testTypeTB = new System.Windows.Forms.TextBox();
+            this.testDateTB = new System.Windows.Forms.TextBox();
+            this.testResultsTB = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataBaseOSDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataBaseOSDataSet1
@@ -71,70 +74,117 @@
             this.patientNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.patientNameLabel.Location = new System.Drawing.Point(12, 9);
             this.patientNameLabel.Name = "patientNameLabel";
-            this.patientNameLabel.Size = new System.Drawing.Size(52, 16);
+            this.patientNameLabel.Size = new System.Drawing.Size(51, 16);
             this.patientNameLabel.TabIndex = 1;
             this.patientNameLabel.Text = "label1";
             // 
-            // dataGridView1
+            // pName
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Name,
-            this.Surname,
-            this.TestType,
-            this.TestDate,
-            this.TestResult});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 46);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.Size = new System.Drawing.Size(503, 67);
-            this.dataGridView1.TabIndex = 2;
+            this.pName.AutoSize = true;
+            this.pName.Location = new System.Drawing.Point(29, 50);
+            this.pName.Name = "pName";
+            this.pName.Size = new System.Drawing.Size(74, 13);
+            this.pName.TabIndex = 3;
+            this.pName.Text = "Patient Name:";
             // 
-            // Name
+            // pSName
             // 
-            this.Name.HeaderText = "Name";
-            this.Name.Name = "Name";
-            this.Name.ReadOnly = true;
+            this.pSName.AutoSize = true;
+            this.pSName.Location = new System.Drawing.Point(15, 82);
+            this.pSName.Name = "pSName";
+            this.pSName.Size = new System.Drawing.Size(88, 13);
+            this.pSName.TabIndex = 3;
+            this.pSName.Text = "Patient Surname:";
             // 
-            // Surname
+            // testType
             // 
-            this.Surname.HeaderText = "Surname";
-            this.Surname.Name = "Surname";
-            this.Surname.ReadOnly = true;
+            this.testType.AutoSize = true;
+            this.testType.Location = new System.Drawing.Point(45, 111);
+            this.testType.Name = "testType";
+            this.testType.Size = new System.Drawing.Size(58, 13);
+            this.testType.TabIndex = 3;
+            this.testType.Text = "Test Type:";
             // 
-            // TestType
+            // testDate
             // 
-            this.TestType.HeaderText = "Test Type";
-            this.TestType.Name = "TestType";
-            this.TestType.ReadOnly = true;
+            this.testDate.AutoSize = true;
+            this.testDate.Location = new System.Drawing.Point(45, 140);
+            this.testDate.Name = "testDate";
+            this.testDate.Size = new System.Drawing.Size(57, 13);
+            this.testDate.TabIndex = 4;
+            this.testDate.Text = "Test Date:";
             // 
-            // TestDate
+            // testResults
             // 
-            this.TestDate.HeaderText = "Test Date";
-            this.TestDate.Name = "TestDate";
-            this.TestDate.ReadOnly = true;
+            this.testResults.AutoSize = true;
+            this.testResults.Location = new System.Drawing.Point(33, 171);
+            this.testResults.Name = "testResults";
+            this.testResults.Size = new System.Drawing.Size(69, 13);
+            this.testResults.TabIndex = 4;
+            this.testResults.Text = "Test Results:";
             // 
-            // TestResult
+            // pNameTB
             // 
-            this.TestResult.HeaderText = "Test Result";
-            this.TestResult.Name = "TestResult";
-            this.TestResult.ReadOnly = true;
+            this.pNameTB.Location = new System.Drawing.Point(131, 50);
+            this.pNameTB.Name = "pNameTB";
+            this.pNameTB.ReadOnly = true;
+            this.pNameTB.Size = new System.Drawing.Size(100, 20);
+            this.pNameTB.TabIndex = 5;
+            // 
+            // pSNameTB
+            // 
+            this.pSNameTB.Location = new System.Drawing.Point(131, 79);
+            this.pSNameTB.Name = "pSNameTB";
+            this.pSNameTB.ReadOnly = true;
+            this.pSNameTB.Size = new System.Drawing.Size(100, 20);
+            this.pSNameTB.TabIndex = 5;
+            // 
+            // testTypeTB
+            // 
+            this.testTypeTB.Location = new System.Drawing.Point(131, 108);
+            this.testTypeTB.Name = "testTypeTB";
+            this.testTypeTB.ReadOnly = true;
+            this.testTypeTB.Size = new System.Drawing.Size(100, 20);
+            this.testTypeTB.TabIndex = 5;
+            // 
+            // testDateTB
+            // 
+            this.testDateTB.Location = new System.Drawing.Point(131, 137);
+            this.testDateTB.Name = "testDateTB";
+            this.testDateTB.ReadOnly = true;
+            this.testDateTB.Size = new System.Drawing.Size(100, 20);
+            this.testDateTB.TabIndex = 5;
+            // 
+            // testResultsTB
+            // 
+            this.testResultsTB.Location = new System.Drawing.Point(131, 168);
+            this.testResultsTB.Multiline = true;
+            this.testResultsTB.Name = "testResultsTB";
+            this.testResultsTB.ReadOnly = true;
+            this.testResultsTB.Size = new System.Drawing.Size(100, 111);
+            this.testResultsTB.TabIndex = 5;
             // 
             // ViewResults
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(532, 133);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(272, 314);
+            this.Controls.Add(this.testResultsTB);
+            this.Controls.Add(this.testDateTB);
+            this.Controls.Add(this.testTypeTB);
+            this.Controls.Add(this.pSNameTB);
+            this.Controls.Add(this.pNameTB);
+            this.Controls.Add(this.testResults);
+            this.Controls.Add(this.testDate);
+            this.Controls.Add(this.testType);
+            this.Controls.Add(this.pSName);
+            this.Controls.Add(this.pName);
             this.Controls.Add(this.patientNameLabel);
+            this.Name = "ViewResults";
             this.Text = "ViewResults";
             this.Load += new System.EventHandler(this.ViewResults_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataBaseOSDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -146,11 +196,15 @@
         private DataBaseOSDataSet1TableAdapters.TableTableAdapter tableTableAdapter;
         private DataBaseOSDataSet1TableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.Label patientNameLabel;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Surname;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TestType;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TestDate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TestResult;
+        private System.Windows.Forms.Label pName;
+        private System.Windows.Forms.Label pSName;
+        private System.Windows.Forms.Label testType;
+        private System.Windows.Forms.Label testDate;
+        private System.Windows.Forms.Label testResults;
+        private System.Windows.Forms.TextBox pNameTB;
+        private System.Windows.Forms.TextBox pSNameTB;
+        private System.Windows.Forms.TextBox testTypeTB;
+        private System.Windows.Forms.TextBox testDateTB;
+        private System.Windows.Forms.TextBox testResultsTB;
     }
 }

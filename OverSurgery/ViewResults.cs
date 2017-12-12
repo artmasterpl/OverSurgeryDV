@@ -30,10 +30,38 @@ namespace OverSurgery
             var names = patientName.Split(' ');
             string patientFName = names[0];
             string patientLName = names[1];
+            //WHERE [Name] =" + patientFName + " AND Surname =" + patientLName, conn
 
-            /*DBConnection con = new DBConnection();
-            con.openConnection();
-            DBConnection.getDBConnectionInstance().testResults(patientFName, patientLName);*/
+            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Lewis\Documents\GitHub\OverSurgeryDV\OverSurgery\DataBaseOS.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlCommand command = new SqlCommand("SELECT * FROM [Table] WHERE Name = '" + patientFName + "' AND Surname = '" + patientLName + "'", conn ); //finds the test results from the name of the patient
+
+            try
+            {
+                conn.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                while(reader.Read())
+                {
+                    pNameTB.Text = (reader["Name"].ToString()); //Adds the sql results into the text boxes
+                    pSNameTB.Text = (reader["surname"].ToString());
+                    testTypeTB.Text = (reader["Test Type"].ToString());
+                    testDateTB.Text = (reader["Test Date"].ToString());
+                    testResultsTB.Text = (reader["Test Results"].ToString());
+                }
+                reader.Close();
+            }
+            catch(SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }

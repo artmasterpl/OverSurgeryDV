@@ -90,18 +90,7 @@ namespace OverSurgery
                 ViewResults ss = new ViewResults(this);
                 ss.Show();
             }
-            /*con = new DBConnection();
 
-            //get data from text boxes
-            string patientID = patientSelected.Text;
-
-            con.openConnection();
-            DBConnection.getDBConnectionInstance().testResults(patientID);
-            this.Validate();
-            DBConnection.getDBConnectionInstance().testResults.sear
-            con.closeConnection();*/
-
-    
 
         }
 

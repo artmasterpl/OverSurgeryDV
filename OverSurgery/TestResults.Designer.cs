@@ -132,6 +132,7 @@
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6});
+            this.patientDataGridView.Cursor = System.Windows.Forms.Cursors.Cross;
             this.patientDataGridView.DataSource = this.patientBindingSource;
             this.patientDataGridView.Location = new System.Drawing.Point(185, 31);
             this.patientDataGridView.Name = "patientDataGridView";
